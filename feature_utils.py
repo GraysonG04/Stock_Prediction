@@ -9,7 +9,7 @@ import os
 import sys
 import json #
 
-from src.Custom_Classes import FeatureEngineer
+from Custom_Classes import FeatureEngineer
 
 
 def extract_features():
@@ -97,9 +97,9 @@ def convert_input_pca_regression(request_body, request_content_type):
 
     target = 'MSFT'
 
-    option = 2
+    option = 1
 
-    if option == 2:
+    if option == 1:
 
         X = FeatureEngineer(windows=[10,15]).transform(dataset[[target]])
     
